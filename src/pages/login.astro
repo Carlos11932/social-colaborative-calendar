@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Login - Social Calendar</title>
+</head>
+<body class="bg-gray-50 font-sans min-h-screen flex items-center justify-center p-5">
+    <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
+        <!-- Titulo -->
+        <h1 data-i18n="auth.login.title" class="text-2xl font-bold text-center text-gray-800 mb-8">Sign In</h1>
+        
+        <!-- Mensajes -->
+        <div id="error-message" class="hidden mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
+            <span id="error-text"></span>
+        </div>
+
+        <!-- Formulario -->
+        <form id="login-form" class="space-y-5">
+            <div>
+                <label data-i18n="auth.login.email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email"
+                    data-i18n="auth.login.emailPlaceholder"
+                    placeholder="you@email.com"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    required
+                />
+            </div>
+            
+            <div>
+                <label data-i18n="auth.login.password" class="block text-sm font-medium text-gray-700 mb-2">Password</label>
+                <input 
+                    type="password" 
+                    id="password"
+                    data-i18n="auth.login.passwordPlaceholder"
+                placeholder="********"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    required
+                />
+            </div>
+            
+            <button 
+                type="submit" 
+                id="submit-button"
+                data-i18n="auth.login.submit"
+                class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors font-medium"
+            >
+                Sign In
+            </button>
+        </form>
+
+        <!-- Link a registro -->
+        <div class="mt-6 text-center">
+            <p class="text-sm text-gray-600">
+                <span data-i18n="auth.login.noAccount">Don't have an account?</span>
+                <a href="/register" data-i18n="auth.login.registerLink" class="text-blue-600 hover:text-blue-700 font-medium ml-1">Register here</a>
+            </p>
+        </div>
+
+        <!-- Language switcher -->
+        <div class="mt-8 flex justify-center">
+            <div class="bg-gray-100 rounded-full p-1">
+                <button id="lang-en" class="text-xs text-gray-400 hover:text-gray-600 mr-2 px-2 py-1 rounded">EN</button>
+                <span class="text-gray-300">|</span>
+                <button id="lang-es" class="text-xs text-blue-600 hover:text-blue-800 ml-2 px-2 py-1 rounded font-semibold">ES</button>
+            </div>
+        </div>
+    </div>
+
+                <script type="module">
+            import '/src/scripts/login.ts';
+        </script>
+</body>
+</html>

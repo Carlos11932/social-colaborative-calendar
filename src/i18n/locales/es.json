@@ -1,0 +1,105 @@
+{
+  "auth": {
+    "register": {
+      "title": "Crear Cuenta",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "password": "Contraseña",
+      "passwordPlaceholder": "Mínimo 6 caracteres",
+      "submit": "Crear Cuenta",
+      "submitting": "Creando...",
+      "hasAccount": "¿Ya tienes cuenta?",
+      "loginLink": "Inicia sesión aquí",
+      "success": "¡Cuenta creada exitosamente! Redirigiendo...",
+      "errors": {
+        "passwordLength": "La contraseña debe tener al menos 6 caracteres",
+        "createProfile": "Error al crear el perfil",
+        "verifyProfile": "El perfil no se verificó correctamente",
+        "general": "Error al crear la cuenta"
+      }
+    },
+    "login": {
+      "title": "Iniciar Sesión",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "password": "Contraseña",
+      "passwordPlaceholder": "********",
+      "submit": "Iniciar Sesión",
+      "submitting": "Iniciando...",
+      "noAccount": "¿No tienes cuenta?",
+      "registerLink": "Regístrate aquí",
+      "errors": {
+        "general": "Error al iniciar sesión"
+      }
+    },
+    "dashboard": {
+      "loading": "Verificando autenticación...",
+      "welcome": "Hola",
+      "subtitle": "Bienvenido a tu calendario social",
+      "logout": "Cerrar Sesión",
+      "cards": {
+        "events": {
+          "title": "Eventos",
+          "description": "Crea y gestiona tus eventos",
+          "action": "Crear Evento"
+        },
+        "friends": {
+          "title": "Amigos",
+          "description": "Gestiona tus contactos",
+          "action": "Ver Amigos"
+        },
+        "stats": {
+          "title": "Estadísticas",
+          "description": "Próximamente...",
+          "action": "Pronto"
+        }
+      },
+      "success": {
+        "title": "¡Autenticación funcionando!",
+        "description": "Tu MVP está listo para la primera funcionalidad."
+      }
+    }
+  },
+  "landing": {
+    "title": "Calendario Social Colaborativo",
+    "subtitle": "Tu calendario, tus amigos, tus planes — todo en un lugar",
+    "getStarted": "Comenzar",
+    "signIn": "Iniciar Sesión",
+    "featuresTitle": "Todo lo que necesitas para organizar con amigos",
+    "features": {
+      "events": {
+        "title": "Eventos",
+        "desc": "Crea y gestiona eventos con información detallada y planificación inteligente"
+      },
+      "collaboration": {
+        "title": "Colaboración",
+        "desc": "Comparte eventos con amigos y colabora en la planificación"
+      },
+      "communication": {
+        "title": "Comunicación",
+        "desc": "Chatea dentro de eventos, vota opciones y toma decisiones juntos"
+      }
+    },
+    "status": {
+      "title": "Estado del Proyecto",
+      "frontend": "Frontend: Astro + React + TailwindCSS configurado",
+      "backend": "Backend: Supabase conectado con base de datos segura",
+      "auth": "Autenticación: Registro e inicio de sesión funcionando",
+      "deploy": "Despliegue: Deploy automático en Vercel",
+      "i18n": "Internacionalización: Soporte inglés/español",
+      "next": "Siguiente: Funcionalidad de gestión de eventos"
+    },
+    "dashboardLink": "Ir al Dashboard"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar"
+  }
+}

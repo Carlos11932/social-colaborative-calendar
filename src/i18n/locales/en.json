@@ -1,0 +1,105 @@
+{
+  "auth": {
+    "register": {
+      "title": "Create Account",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "password": "Password",
+      "passwordPlaceholder": "Minimum 6 characters",
+      "submit": "Create Account",
+      "submitting": "Creating...",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Sign in here",
+      "success": "Account created successfully! Redirecting...",
+      "errors": {
+        "passwordLength": "Password must be at least 6 characters",
+        "createProfile": "Error creating profile",
+        "verifyProfile": "Profile could not be verified correctly",
+        "general": "Error creating account"
+      }
+    },
+    "login": {
+      "title": "Sign In",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "password": "Password",
+      "passwordPlaceholder": "********",
+      "submit": "Sign In",
+      "submitting": "Signing in...",
+      "noAccount": "Don't have an account?",
+      "registerLink": "Register here",
+      "errors": {
+        "general": "Error signing in"
+      }
+    },
+    "dashboard": {
+      "loading": "Verifying authentication...",
+      "welcome": "Hello",
+      "subtitle": "Welcome to your social calendar",
+      "logout": "Sign Out",
+      "cards": {
+        "events": {
+          "title": "Events",
+          "description": "Create and manage your events",
+          "action": "Create Event"
+        },
+        "friends": {
+          "title": "Friends",
+          "description": "Manage your contacts",
+          "action": "View Friends"
+        },
+        "stats": {
+          "title": "Statistics",
+          "description": "Coming soon...",
+          "action": "Soon"
+        }
+      },
+      "success": {
+        "title": "Authentication working!",
+        "description": "Your MVP is ready for the first functionality."
+      }
+    }
+  },
+  "landing": {
+    "title": "Social Collaborative Calendar",
+    "subtitle": "Your calendar, your friends, your plans — all in one place",
+    "getStarted": "Get Started",
+    "signIn": "Sign In",
+    "featuresTitle": "Everything you need to organize with friends",
+    "features": {
+      "events": {
+        "title": "Events",
+        "desc": "Create and manage events with detailed information and smart scheduling"
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "desc": "Share events with friends and collaborate on planning together"
+      },
+      "communication": {
+        "title": "Communication",
+        "desc": "Chat within events, vote on options, and make decisions together"
+      }
+    },
+    "status": {
+      "title": "Project Status",
+      "frontend": "Frontend: Astro + React + TailwindCSS configured",
+      "backend": "Backend: Supabase connected with secure database",
+      "auth": "Authentication: Registration and login working",
+      "deploy": "Deployment: Automatic deploy to Vercel",
+      "i18n": "Internationalization: English/Spanish support",
+      "next": "Next: Event management functionality"
+    },
+    "dashboardLink": "Go to Dashboard"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit"
+  }
+}

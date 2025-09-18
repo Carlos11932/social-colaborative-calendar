@@ -1,11 +1,104 @@
----
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
----
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Social Collaborative Calendar</title>
+</head>
+<body class="bg-gray-50 font-sans min-h-screen">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Header -->
+        <header class="text-center mb-16">
+            <h1 data-i18n="landing.title" class="text-5xl font-bold text-gray-900 mb-4">
+                Social Collaborative Calendar
+            </h1>
+            <p data-i18n="landing.subtitle" class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Your calendar, your friends, your plans — all in one place
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a 
+                    href="/register" 
+                    data-i18n="landing.getStarted"
+                    class="bg-green-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors"
+                >
+                    Get Started
+                </a>
+                <a 
+                    href="/login" 
+                    data-i18n="landing.signIn"
+                    class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
+                >
+                    Sign In
+                </a>
+            </div>
 
-<Layout>
-	<Welcome />
-</Layout>
+            <!-- Dashboard link para usuarios logueados -->
+            <div id="dashboard-link" class="hidden mt-4">
+                <a href="/dashboard" data-i18n="landing.dashboardLink" class="text-green-600 hover:text-green-700 font-medium">
+                    Go to Dashboard
+                </a>
+            </div>
+        </header>
+
+        <!-- Features Section -->
+        <section class="mb-16">
+            <h2 data-i18n="landing.featuresTitle" class="text-3xl font-bold text-center text-gray-900 mb-12">
+                Everything you need to organize with friends
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="text-4xl mb-4">📅</div>
+                    <h3 data-i18n="landing.features.events.title" class="text-xl font-semibold text-gray-900 mb-2">Events</h3>
+                    <p data-i18n="landing.features.events.desc" class="text-gray-600">
+                        Create and manage events with detailed information and smart scheduling
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="text-4xl mb-4">👥</div>
+                    <h3 data-i18n="landing.features.collaboration.title" class="text-xl font-semibold text-gray-900 mb-2">Collaboration</h3>
+                    <p data-i18n="landing.features.collaboration.desc" class="text-gray-600">
+                        Share events with friends and collaborate on planning together
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="text-4xl mb-4">💬</div>
+                    <h3 data-i18n="landing.features.communication.title" class="text-xl font-semibold text-gray-900 mb-2">Communication</h3>
+                    <p data-i18n="landing.features.communication.desc" class="text-gray-600">
+                        Chat within events, vote on options, and make decisions together
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Status Section -->
+        <section class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+            <h3 data-i18n="landing.status.title" class="text-lg font-semibold text-blue-900 mb-4">Project Status</h3>
+            <ul class="space-y-2 text-blue-800">
+                <li>✅ <span data-i18n="landing.status.frontend">Frontend: Astro + React + TailwindCSS configured</span></li>
+                <li>✅ <span data-i18n="landing.status.backend">Backend: Supabase connected with secure database</span></li>
+                <li>✅ <span data-i18n="landing.status.auth">Authentication: Registration and login working</span></li>
+                <li>✅ <span data-i18n="landing.status.deploy">Deployment: Automatic deploy to Vercel</span></li>
+                <li>✅ <span data-i18n="landing.status.i18n">Internationalization: English/Spanish support</span></li>
+                <li>🚧 <span data-i18n="landing.status.next">Next: Event management functionality</span></li>
+            </ul>
+        </section>
+
+        <!-- Language switcher -->
+        <div class="fixed bottom-4 left-4 bg-white rounded-full shadow-lg p-2">
+            <button id="lang-en" class="text-xs text-gray-400 hover:text-gray-600 mr-2 px-2 py-1 rounded">EN</button>
+            <span class="text-gray-300">|</span>
+            <button id="lang-es" class="text-xs text-blue-600 hover:text-blue-800 ml-2 px-2 py-1 rounded font-semibold">ES</button>
+        </div>
+    </div>
+
+                <script type="module">
+            import '/src/scripts/index.ts';
+        </script>
+</body>
+</html>
