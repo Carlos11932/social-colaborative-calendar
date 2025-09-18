@@ -156,9 +156,11 @@ class RegisterController {
   }
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
+async function bootstrap() {
   await PageInitializer.init();
 
   const controller = new RegisterController();
   await controller.init();
-});
+}
+
+void bootstrap();

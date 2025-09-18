@@ -123,9 +123,11 @@ class DashboardController {
   }
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
+async function bootstrap() {
   await PageInitializer.init();
 
   const controller = new DashboardController();
   await controller.init();
-});
+}
+
+void bootstrap();

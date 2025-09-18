@@ -60,7 +60,10 @@
         "title": "¡Autenticación funcionando!",
         "description": "Tu MVP está listo para la primera funcionalidad."
       }
-    }
+    },
+    "signOut": "Cerrar Sesión",
+    "authWorking": "¡Autenticación funcionando!",
+    "mvpReady": "Tu MVP está listo para la primera funcionalidad."
   },
   "landing": {
     "title": "Calendario Social Colaborativo",
@@ -101,5 +104,30 @@
     "save": "Guardar",
     "delete": "Eliminar",
     "edit": "Editar"
+  },
+  "dashboard": {
+    "loading": "Verificando autenticación...",
+    "welcome": "Hola",
+    "subtitle": "Bienvenido a tu calendario social",
+    "logout": "Cerrar Sesión",
+    "events": {
+      "title": "Eventos",
+      "desc": "Crea y gestiona tus eventos",
+      "action": "Crear Evento"
+    },
+    "friends": {
+      "title": "Amigos",
+      "desc": "Gestiona tus contactos",
+      "action": "Ver Amigos"
+    },
+    "stats": {
+      "title": "Estadísticas",
+      "desc": "Próximamente...",
+      "action": "Pronto"
+    },
+    "success": {
+      "title": "¡Autenticación funcionando!",
+      "description": "Tu MVP está listo para la primera funcionalidad."
+    }
   }
 }

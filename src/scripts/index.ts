@@ -3,7 +3,7 @@ import { PageInitializer } from '../utils/ui';
 
 const dashboardLinkContainerId = 'dashboard-link';
 
-document.addEventListener('DOMContentLoaded', async () => {
+async function bootstrap() {
   await PageInitializer.init();
 
   const authManager = new AuthManager();
@@ -18,4 +18,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   } catch (error) {
     console.debug('No active session', error);
   }
-});
+}
+
+void bootstrap();

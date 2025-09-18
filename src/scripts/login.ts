@@ -126,9 +126,11 @@ class LoginController {
   }
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
+async function bootstrap() {
   await PageInitializer.init();
 
   const controller = new LoginController();
   await controller.init();
-});
+}
+
+void bootstrap();

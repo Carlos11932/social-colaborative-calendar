@@ -60,7 +60,10 @@
         "title": "Authentication working!",
         "description": "Your MVP is ready for the first functionality."
       }
-    }
+    },
+    "signOut": "Sign Out",
+    "authWorking": "Authentication working!",
+    "mvpReady": "Your MVP is ready for the first functionality."
   },
   "landing": {
     "title": "Social Collaborative Calendar",
@@ -101,5 +104,30 @@
     "save": "Save",
     "delete": "Delete",
     "edit": "Edit"
+  },
+  "dashboard": {
+    "loading": "Verifying authentication...",
+    "welcome": "Hello",
+    "subtitle": "Welcome to your social calendar",
+    "logout": "Sign Out",
+    "events": {
+      "title": "Events",
+      "desc": "Create and manage your events",
+      "action": "Create Event"
+    },
+    "friends": {
+      "title": "Friends",
+      "desc": "Manage your contacts",
+      "action": "View Friends"
+    },
+    "stats": {
+      "title": "Statistics",
+      "desc": "Coming soon...",
+      "action": "Soon"
+    },
+    "success": {
+      "title": "Authentication working!",
+      "description": "Your MVP is ready for the first functionality."
+    }
   }
 }
